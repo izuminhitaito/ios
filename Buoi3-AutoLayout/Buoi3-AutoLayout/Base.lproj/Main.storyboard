@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,16 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tdg-Zh-hfj" userLabel="ViewDO">
-                                <rect key="frame" x="0.0" y="51" width="320" height="125"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-PI-qLK" userLabel="ViewOVER">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iK-0x-fyZ" userLabel="ViewTREN">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                                        <color key="backgroundColor" red="1" green="0.27940455992360957" blue="0.13906922123360754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywh-je-SaF" userLabel="ViewDUOI">
+                                        <rect key="frame" x="0.0" y="230" width="320" height="230"/>
+                                        <color key="backgroundColor" red="0.35780603978032965" green="0.4131374134889324" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44462428840816759" green="1" blue="0.88575701371774451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6iK-0x-fyZ" secondAttribute="trailing" id="D6F-Jk-Wmf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ywh-je-SaF" secondAttribute="trailing" id="G10-py-uuk"/>
+                                    <constraint firstItem="ywh-je-SaF" firstAttribute="leading" secondItem="xkV-PI-qLK" secondAttribute="leading" id="Nc1-mc-AQx"/>
+                                    <constraint firstItem="6iK-0x-fyZ" firstAttribute="height" secondItem="xkV-PI-qLK" secondAttribute="height" multiplier="1:2" id="SBv-8x-0SU"/>
+                                    <constraint firstItem="ywh-je-SaF" firstAttribute="height" secondItem="xkV-PI-qLK" secondAttribute="height" multiplier="1:2" id="SPu-zg-Mzb"/>
+                                    <constraint firstAttribute="bottom" secondItem="ywh-je-SaF" secondAttribute="bottom" id="vJD-Lk-qMa"/>
+                                    <constraint firstItem="6iK-0x-fyZ" firstAttribute="leading" secondItem="xkV-PI-qLK" secondAttribute="leading" id="xxK-3m-wLs"/>
+                                    <constraint firstItem="6iK-0x-fyZ" firstAttribute="top" secondItem="xkV-PI-qLK" secondAttribute="top" id="yhA-aT-Ld1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Tdg-Zh-hfj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KVQ-S6-wvg"/>
-                            <constraint firstItem="Tdg-Zh-hfj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="NBq-gc-hp5"/>
-                            <constraint firstItem="Tdg-Zh-hfj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RZu-Lu-xWq"/>
+                            <constraint firstItem="xkV-PI-qLK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ar4-iU-zrI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xkV-PI-qLK" secondAttribute="trailing" id="DUs-H8-aru"/>
+                            <constraint firstItem="xkV-PI-qLK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PX4-aJ-Auo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xkV-PI-qLK" secondAttribute="bottom" id="k8r-Qi-gId"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
